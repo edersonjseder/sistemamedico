@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf13177547287480" configfile="/sistemamedico/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="login" id="pf13177548730991" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf13177548730992 pf13177548730993" path="/inicio.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="loginAdministrador" id="pf13177548730994" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf13177548730992" path="/loginAdministrador.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="loginUsuario" id="pf13177548730995" referenceLink="//@navigationRule.0/@navigationCase.1/@toViewId|" inlinks="pf13177548730993" path="/loginUsuario.jsp"/>
+  <links id="pf13177548730992" target="pf13177548730994" source="pf13177548730991" outcome="admin"/>
+  <links id="pf13177548730993" target="pf13177548730995" source="pf13177548730991" outcome="user" redirect="true"/>
+</pageflow:Pageflow>
